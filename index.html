@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TMAP 茶地圖</title>
+  <meta content="TMap茶地圖 - 慈濟靜思茶道" name="description">
+  <meta content="台灣茶, 茶道, 靜思茶道, 茶葉, 茶地圖, 台灣茶地圖, 臺灣茶, 臺灣茶地圖, TMap, tmap, Tmap, 慈濟" name="keywords">
+
+  <!-- circle-icon -->
+  <link href="assets/img/others/circle-icon-32.png" rel="icon">
+  <link href="assets/img/others/circle-icon-180.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+  <!-- google icons-->
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=psychiatry" />
+  
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
+
+      <div class="logo">
+        <h1 class="text-light">
+          <a href="index.html">
+            <span class="material-symbols-outlined" id="main_brand_icon">psychiatry</span>
+            <span id="main_brand"> tzu chi tea ceremony </span>
+          </a>
+        </h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">首頁</a></li>
+          <li><a class="nav-link scrollto" href="#about">TMAP</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">相關文章</a></li>
+          <li><a class="nav-link scrollto" href="#contact">聯繫方式</a></li>
+          <li class="dropdown"><a href="#services"><span>其他</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=Zkbj8eWV7ak" target="_blank">茶道</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>臺灣茶地圖</h1>
+      <h2>慈濟靜思茶道課程</h2>
+      <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+    </div>
+  </section>
+  <script>
+    function randomImage(){
+      var images=[
+                  "./assets/img/background/tea_background3.jpg",
+                  "./assets/img/background/tea_background2.jpg",
+                  "./assets/img/background/tea_background1.jpg",
+                  ]
+      var size = images.length;
+      var x = Math.floor(size * Math.random());
+      document.getElementById("hero").style.cssText="background: linear-gradient(black 0 2%, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.2)), url("+images[x]+");width: 100%;height: 100vh;background-size: cover;position: relative;margin-bottom: -90px;background-attachment: fixed;";
+    }
+    randomImage()
+  </script>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div style="display:flex; width: 80%; margin: 0px 30px 0px 30px; justify-content: center; align-items: center;">
+          <div class="section-title">
+            <div data-aos="fade-up" data-aos-delay="800" style="display: flex; align-items: end; justify-content: center; margin-bottom: 15px;">
+              <p class="neon-title-animated">各地的茶葉</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="1500" class="neon-text-animated" style="display: flex; align-items: center; justify-content: center; margin-top: 15px; color: rgba(255, 255, 255, 0.615);">
+              台灣茶葉以其獨特的風土與精湛的製茶工藝聞名於世。島嶼氣候多變、山巒起伏，孕育出多樣化的茶區與風味。此外，台灣茶農在傳統工藝上不斷創新，發展出具有地域特色的品種，使台灣成為世界高品質茶葉的重要產地之一。
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; width: 100%; margin: 0px 30px 0px 30px; justify-content: center; align-items: center;" data-aos="fade-in" data-aos-delay="200">
+          <div class="map-container">
+            <img src="assets\img\background\taiwan_map.jpg" alt="台灣地圖">
+
+            <div class="marker-container Bi-Luo-Chun" data-aos="zoom-out" data-aos-delay="800">
+              <a href="https://zh.wikipedia.org/zh-tw/%E7%A2%A7%E8%9E%BA%E6%98%A5" target="_blank">
+                <div class="marker" data-info="Bi-Luo-Chun">
+                  <div class="popup">
+                    <strong>三峽碧螺春</strong><br>
+                    <text style="color: #444444;">新北市</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="marker-container Pouchong" data-aos="zoom-out" data-aos-delay="600">
+              <a href="https://zh.wikipedia.org/zh-tw/%E6%96%87%E5%B1%B1%E5%8C%85%E7%A8%AE%E8%8C%B6" target="_blank">
+                <div class="marker" data-info="Pouchong">
+                  <div class="popup">
+                    <strong>文山包種茶</strong><br>
+                    <text style="color: #444444;">臺北市</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="marker-container Tieguanyin" data-aos="zoom-out" data-aos-delay="700">
+              <a href="https://zh.wikipedia.org/zh-tw/%E9%93%81%E8%A7%82%E9%9F%B3" target="_blank">
+                <div class="marker" data-info="Tieguanyin">
+                  <div class="popup">
+                    <strong>木柵鐵觀音</strong><br>
+                    <text style="color: #444444;">臺北市</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container Oriental-Beauty" data-aos="zoom-out" data-aos-delay="900">
+              <a href="https://zh.wikipedia.org/zh-tw/%E6%9D%B1%E6%96%B9%E7%BE%8E%E4%BA%BA%E8%8C%B6" target="_blank">
+                <div class="marker" data-info="Oriental-Beauty">
+                  <div class="popup">
+                    <strong>東方美人茶</strong><br>
+                    <text style="color: #444444;">苗栗縣</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container Luye-Red-Oolong" data-aos="zoom-out" data-aos-delay="1500">
+              <a href="https://zh.wikipedia.org/zh-tw/%E7%B4%85%E7%83%8F%E9%BE%8D" target="_blank">
+                <div class="marker" data-info="Luye-Red-Oolong">
+                  <div class="popup">
+                    <strong>鹿野紅烏龍</strong><br>
+                    <text style="color: #444444;">臺東縣鹿野鄉</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container Honey-Scented" data-aos="zoom-out" data-aos-delay="1400">
+              <a href="https://www.hanyitea.tw/single-post/honey-black-tea/" target="_blank">
+                <div class="marker" data-info="Honey-Scented">
+                  <div class="popup">
+                    <strong>蜜香紅茶</strong><br>
+                    <text style="color: #444444;">花蓮縣</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container Sun-Moon-Lake" data-aos="zoom-out" data-aos-delay="1000">
+              <a href="https://teatalkacademy.com/knowledge/taiwan-special/sun-moon-lake-black-tea" target="_blank">
+                <div class="marker" data-info="Sun-Moon-Lake">
+                  <div class="popup">
+                    <strong>日月潭紅茶</strong><br>
+                    <text style="color: #444444;">南投縣日月潭</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container Sijichun" data-aos="zoom-out" data-aos-delay="1100">
+              <a href="https://www.hanyitea.tw/single-post/sijichun/" target="_blank">
+                <div class="marker" data-info="Sijichun">
+                  <div class="popup">
+                    <strong>四季春</strong><br>
+                    <text style="color: #444444;">南投縣名間鄉</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container High-Mountain-Oolong" data-aos="zoom-out" data-aos-delay="1300">
+              <a href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E9%AB%98%E5%B1%B1%E8%8C%B6" target="_blank">
+                <div class="marker" data-info="High-Mountain-Oolong">
+                  <div class="popup">
+                    <strong>高山烏龍茶</strong><br>
+                    <text style="color: #444444;">嘉義縣阿里山</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="marker-container Dongding-Oolong" data-aos="zoom-out" data-aos-delay="1200">
+              <a href="https://zh.wikipedia.org/zh-tw/%E5%87%8D%E9%A0%82%E7%83%8F%E9%BE%8D%E8%8C%B6" target="_blank">
+                <div class="marker" data-info="Dongding-Oolong">
+                  <div class="popup">
+                    <strong>凍頂烏龍茶</strong><br>
+                    <text style="color: #444444;">南投縣鹿谷鄉</text><br>
+                    <text style="font-size: 80%; color: #67b0d1;">點擊查看更多</text>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="grain" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div style="display:flex; width: 80%; margin: 0px 30px 0px 30px; justify-content: center; align-items: center;" data-aos="fade-in" data-aos-delay="800">
+          <div class="neon-frame-animated image-frame">
+            <div class="neon-frame-animated2 tea-image-container">
+              <div class="tea-image">
+              
+              </div>
+            </div>
+            <div class="neon-frame-animated2 tea-intro">
+             <text>移至標記查看茶葉資訊</text>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          const markers = document.querySelectorAll('.marker');
+          const imageArea = document.querySelector('.tea-image');
+          const introArea = document.querySelector('.tea-intro');
+          const articles = {
+            "Bi-Luo-Chun":"使用獨特的在地品種「青心柑仔」使得尾韻還伴有淡淡柑橘雅甜，清新爽口，純淨自然",
+            "Pouchong":"香氣撲鼻，滋味甘潤，入口生津，有香、濃、醇、韻、美等五大特色，其名起源於其包裝方式",
+            "Tieguanyin":"有重發酵、重烘焙的風味特色，味濃而醇厚，微澀中帶甘潤，並有弱果酸味。",
+            "Sijichun":"受到南投縣政府推動的復興計畫所影響，當時的總統蔣經國起名為「松柏長青」。",
+            "Oriental-Beauty":"香氣聞之有天然熟果香，芬芳怡人者為貴，茶湯入口滋味濃厚，甘醇而不生澀，圓滑潤和具有刺激性，過喉徐徐生津。",
+            "Sun-Moon-Lake":"以不曬青、重揉捻，最後乾燥製成條型工夫紅茶，味道沉重、木質調明顯，收歛感強，釋出速度快。",
+            "Dongding-Oolong":"湯色略呈柳橙黃色，有明顯清香，近似桂花香，湯味醇厚甘潤，喉韻回甘強。",
+            "High-Mountain-Oolong":"最具代表性的就是曾為前人歸類中，名列十大名茶的阿里山茶",
+            "Luye-Red-Oolong":"湯很醇厚，果實香氣撲鼻，滋味濃郁滿載的糖香，適用冷泡茶、冰鎮茶更為優秀。",
+            "Honey-Scented":"經過小綠葉蟬啃咬過的茶菁，會散發出特殊蜜果香，這也是蜜香紅茶最大特色。"
+          };
+
+          markers.forEach(marker => {
+            marker.addEventListener('mouseenter', () => {
+              imageArea.style.backgroundImage = `url(assets/img/background/${marker.getAttribute('data-info')}.png)`;
+              imageArea.style.opacity = '0.8';
+              introArea.style.color = '#ffffffbb';
+              introArea.style.fontSize = '14px';
+              introArea.innerHTML = "<text>"+articles[marker.getAttribute('data-info')]+"</text>";
+            });
+            marker.addEventListener('mouseleave', () => {
+              imageArea.style.opacity = '0.4';
+              imageArea.style.backgroundImage = `url('assets/img/background/tea-leaf-icon.png')`;
+              introArea.style.color = '#ffffff30';
+              introArea.style.fontSize = '16px';
+              introArea.innerHTML = "<text>點選標記查看茶葉資訊</text>";
+            });
+          });
+        </script>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+
+      <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>相關文章</h2>
+          <p>延伸茶知識</p>
+      </div>
+
+      <div class="testimonials-decoration" data-aos="fade-up" data-aos-delay="300"></div>
+
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="600">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="https://www.yoshantea.com/pc/news.php?id=21070760e50f39ae584&lang=zh-tw#gsc.tab=0" target="_blank">
+                  <div>
+                    <div class="fixer-container">
+                      <div class="latest-img-box">
+                        <img src="assets/img/article_img/article_img1.png" class="testimonial-img" alt="">
+                      </div>
+                      <div class="slide-box">
+                        <h3>如何品茶？</h3>
+                        喝茶學問大！品茶3技巧，帶你深入體驗品茶文化
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="https://www.jingsi.org/?view=article&id=55:tea&catid=31" target="_blank">
+                  <div>
+                    <div class="fixer-container">
+                      <div class="latest-img-box">
+                        <img src="assets/img/article_img/article_img2.jpg" class="testimonial-img" alt="">
+                      </div>
+                      <div class="slide-box">
+                        <h3>慈濟三義茶園</h3>
+                        一念真心為靜思，經冬歷春開源掘泉。一分善心為茶樹，冷暖情雨呵護備至。人間菩薩如農夫，寒來暑往守護大地。
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="https://www.jsy-tea.com/blog/posts/brew-tea?srsltid=AfmBOorHiQ1J4ckcFlqkShGG8yNS58i6giMRT1Qb7rERUnTRvqWMkvjT" target="_blank">
+                  <div>
+                    <div class="fixer-container">
+                      <div class="latest-img-box">
+                        <img src="assets/img/article_img/article_img3.jpg" class="testimonial-img" alt="">
+                      </div>
+                      <div class="slide-box">
+                        <h3>如何泡出好茶？</h3>
+                        如何沖泡出好茶，肯定是許多人買到茶葉後的第一個疑問，而沖泡出一杯好茶的方法隨著時代的演變有所變化，但我們認為泡茶的「心態」是永恆不變的。
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="https://www.teafunofficial.com/blog/posts/blog17-1?srsltid=AfmBOoqFp2ozpuINdyOGdOEj3Vbp3KGk1x7GZ8L_KEEwsQWtZB9aoWoC" target="_blank">
+                  <div>
+                    <div class="fixer-container">
+                      <div class="latest-img-box">
+                        <img src="assets/img/article_img/article_img4.png" class="testimonial-img" alt="">
+                      </div>
+                      <div class="slide-box">
+                        <h3>茶葉的歷史</h3>
+                        茶葉是一種在全世界廣泛飲用的飲料，其歷史可以追溯至古代中國。在這篇文章中，我們將深入探討茶葉的歷史和其在不同文化中的重要性。
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="https://www.tbrs.gov.tw/ws.php?id=4748" target="_blank">
+                  <div>
+                    <div class="fixer-container">
+                      <div class="latest-img-box">
+                        <img src="assets/img/article_img/article_img5.jpg" class="testimonial-img" alt="">
+                      </div>
+                      <div class="slide-box">
+                        <h3>臺灣特色茶分類及加工製程</h3>
+                        臺灣特色茶分類及加工製程簡介
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="https://tw.tzuchi.org/community/index.php?option=com_content&view=article&id=122949:53AC15C0148411EF9C4EF77C14A15598&catid=44:homes-gardens&Itemid=170" target="_blank">
+                  <div>
+                    <div class="fixer-container">
+                      <div class="latest-img-box">
+                        <img src="assets/img/article_img/article_img6.jpg" class="testimonial-img" alt="">
+                      </div>
+                      <div class="slide-box">
+                        <h3>靜思茶道</h3>
+                        靜思茶道人文課程，茶學知識與慈濟人文兼具，可培養學生生活的美感、學習恭敬的禮儀、養成安定的心境。
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="section-title">
+        <h2>聯繫方式</h2>
+        <p>Contact</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Address</h3>
+              <p>970花蓮縣花蓮市中央路三段701號</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p>tcuoia@gms.tcu.edu.tw</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Phone Number</h3>
+              <p>03-8565301</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <div class="google-map">
+              <iframe id="map-canvas" class="map_part" width=100%  height=384px  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11684.62854898278!2d121.59345024235057!3d23.989923603191134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689fae76f166d3%3A0x26f9e86680843ec1!2z5oWI5r-f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1762699231447!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="other-media">
+              <h3>Social Accounts (Not Available)</h3>
+              <div class="social-links-box">
+                <div class="social-links mt-3">
+                  <a href="" class="discord"><i class="bx bxl-discord"></i></a>
+                  <a href="" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="" class="github"><i class="bx bxl-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Tzu Chi University</h3>
+              <p class="pb-3">
+                <em>
+                  佛教慈濟大學<br>
+                  970花蓮縣花蓮市中央路三段701號<br><br>
+                </em>
+                <img src="./assets/img/others/tsu-chi.jpg" class="selfie_2">
+              </p>
+              <p>
+                <strong>Phone:</strong> 03-8565301<br>
+                <strong>Wedsite:</strong> https://www.tcu.edu.tw/<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.tcu.edu.tw/" target="_blank">慈濟大學</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://tw.tzuchi.org/community/index.php?option=com_content&view=article&id=122949:53AC15C0148411EF9C4EF77C14A15598&catid=44:homes-gardens&Itemid=170" target="_blank">慈濟靜思茶道</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Contents</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">首頁</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">TMAP茶地圖</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">相關文章</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">聯絡方式</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        部分圖片、文字等素材來自網路<br>
+        所有版權歸屬於其作者<br>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
